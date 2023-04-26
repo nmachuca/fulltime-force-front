@@ -1,0 +1,125 @@
+:root {
+    --bg-secondary: #1e293b;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    background-color: #475569;
+}
+
+header {
+    height: 7.5vh;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid #64748b;
+}
+
+.header-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #64748b;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-left: 2%;
+    color: white;
+}
+
+.selector-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    height: 7.5vh;
+}
+
+.selector-container {
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    width: 85%;
+}
+
+.table-section {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+table {
+    font-family: 'Source Code Pro', monospace;
+    border-collapse: collapse;
+    margin-top: 5%;
+    width: 60%;
+  }
+
+table td, table th {
+    border-bottom: 1px solid #020617;
+    width: 50%;
+    padding: 8px;
+    color: #020617;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background-color: #64748b;
+}
+
+.link {
+    text-decoration: none;
+    color: #171717;
+}
+
+.footer-container {
+    border-top: 1px solid #64748b;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    padding: 5% 0;
+}
+
+.heart-icon {
+    color: tomato
+}
+
+@media only screen and (min-width: 992px) {
+    .selector-section, header {
+        height: 10vh;
+    }
+
+    .table-section {
+        height: 60vh;
+    }
+
+    table {
+        margin-top: 0;
+      }
+}
+
+@media only screen and (min-width: 992px) {
+    .selector-section, header {
+        height: 12.5vh;
+    }
+
+    .table-section {
+        height: 50vh;
+    }
+
+    table {
+        width: 30%;
+    }
+}
